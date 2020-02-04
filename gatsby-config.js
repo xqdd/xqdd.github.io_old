@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/blog",
+  pathPrefix: "/xqdd",
   plugins: [
     "gatsby-theme-casper",
   ],

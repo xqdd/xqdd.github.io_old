@@ -9,6 +9,11 @@ import Facebook from "gatsby-theme-casper/src/components/icons/facebook"
 import Twitter from "gatsby-theme-casper/src/components/icons/twitter"
 import SubscribeModal from "gatsby-theme-casper/src/components/subscribe/SubscribeOverlay"
 import SiteNavLogo from "gatsby-theme-casper/src/components/header/SiteNavLogo"
+import music from "./icons/music.svg"
+import bilibili from "./icons/bilibili.svg"
+import github from "./icons/github.svg"
+import gitee from "./icons/gitee.png"
+import gitlab from "./icons/gitlab.svg"
 
 const HomeNavRaise = css`
   @media (min-width: 900px) {
@@ -173,6 +178,59 @@ class SiteNav extends React.Component<SiteNavProps> {
               </SiteNavLeft>
               <SiteNavRight>
                 <SocialLinks>
+
+                  <a
+                    css={SocialLink}
+                    href="https://github.com/XQDD"
+                    title="Github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={github} />
+                  </a>
+
+
+                  <a
+                    css={SocialLink}
+                    href="https://gitlab.com/XQDD"
+                    title="Gitlab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={gitlab} />
+                  </a>
+
+
+                  <a
+                    css={SocialLink}
+                    href="https://gitee.com/XQDDIN"
+                    title="Gitee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img style={{ width: "16px", height: "16px" }} src={gitee} />
+                  </a>
+
+                  <a
+                    css={SocialLink}
+                    href="https://space.bilibili.com/15582031"
+                    title="BiliBili"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={bilibili} />
+                  </a>
+
+                  <a
+                    css={SocialLink}
+                    href="https://music.163.com/#/user/home?id=101428949"
+                    title="Cloud Music"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img style={{ width: "16px", height: "16px" }} src={music} />
+                  </a>
+
                   {config.facebook && (
                     <a
                       css={SocialLink}
@@ -195,6 +253,7 @@ class SiteNav extends React.Component<SiteNavProps> {
                       <Twitter />
                     </a>
                   )}
+
                 </SocialLinks>
                 {config.showSubscribe && (
                   <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
