@@ -30,7 +30,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -o gitee-xqdd ; gatsby build && gh-pages -d public -o gitee && gh-pages -d public -o github ",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -o gitee-xqdd ; gatsby build && gh-pages -d public -o gitee && gh-pages -d public -o github -b master",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
