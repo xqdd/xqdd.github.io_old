@@ -84,9 +84,10 @@ const SiteNavRight = styled.div`
   display: flex;
   align-items: center;
   height: 40px;
+  
 
   @media (max-width: 700px) {
-    display: none;
+      width: 180px;
   }
 `
 
