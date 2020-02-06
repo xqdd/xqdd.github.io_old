@@ -1,3 +1,9 @@
 - id: Technology
   description: Technology Share
   image: img/toolbox.webp
+- id: Saying
+  description: Word driven the world
+  image: img/saying.png
+- id: Other
+  description: Misc
+  image: img/gold.jpg
